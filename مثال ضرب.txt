@@ -1,0 +1,14 @@
+$s1 = 8
+$s2 = 7
+$s3 = 0
+$t2 = 190
+end_set
+
+loop:
+beq $s2,$zero,end
+add $s3,$s3,$s1
+addi $s2,$s2,-1
+j loop
+
+end:
+
